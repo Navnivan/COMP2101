@@ -1,1 +1,1 @@
-﻿get-ciminstance -class win32_networkadapterconfiguration | format-table IP, IPSubnet, DNSDomain, DNSServerSearchOrder
+﻿get-ciminstance -class win32_networkadapterconfiguration -Filter IPEnabled=$true | format-table IP, IPSubnet, DNSDomain, DNSServerSearchOrder
